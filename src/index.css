@@ -1,13 +1,168 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lemon&family=Mogra&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Port+Lligat+Slab&display=swap');
+
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background-color: aliceblue;
+  min-height: 100vh;
+  position: relative;
+  font-family: "josefin sans";
+}
+
+body::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  
+  z-index: -1;
+}
+
+a{
+  text-decoration: none;
+}
+
+header{
+  
+  background: white;
+  box-shadow: 0 0 5px;
+}
+
+.container{
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.container nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container nav .logo{
+  color: #212a3c;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.container nav .logo1{
+  color: #212a3c;
+  font-size: 1.2rem;
+  cursor: pointer;
+  visibility: hidden;
+  position: fixed;
+  top: -80;
+  left: -80;
+}
+
+.container .nav-link{
+  display: flex;
+}
+
+.container .nav-link li{
+  list-style: none;
+  margin: 0 0.5rem;
+}
+
+.container ul li a{
+  transition: 0.2s;
+  color: #212a3c;
+  font-size: 1.3rem;
+  padding: 0.7rem 1rem;
+  display: block;
+  border-radius: 10px;
+  border-radius: 4px;
+}
+
+.container ul li :hover,
+.container ul li .active{
+  background-color: #ecf0f1;
+}
+
+.tap{
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+}
+
+.tapback{
+  
+}
+
+.icon{
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.ptulogo img{
+  width: 2.5rem;
+}
+
+@media(max-width: 768px){
+
+  .content h2{
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .icon{
+    display: block;
+  }
+
+  .container nav .logo{
+  color: #212a3c;
+  font-size: 1.2rem;
+  cursor: pointer;
+  visibility: hidden;
+  position: fixed;
+  top: -80px;
+  left: -80px;
+  }
+
+  .container nav .logo1{
+    color: #212a3c;
+    font-size: 1.2rem;
+    cursor: pointer;
+    visibility: visible;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .logo1 h2{
+    font-size: 2.5rem;
+    color: #212a3c;
+  }
+
+  .container .nav-link{
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #ffffff68;
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    border: 1px solid rgba(213, 210, 210, 0.77);
+    position: absolute;
+    width: 350px;
+    height: 60vh;
+    top: -800px;
+    right: 0;
+    z-index: 5;
+    transition: all 0.7s
+  }
+
+  .nav-link.active{
+    top: 95px;
+    transition: all 0.7s ease-in;
+  }
 }
