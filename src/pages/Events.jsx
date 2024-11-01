@@ -7,7 +7,9 @@ import essay from './images/essay.jpeg'
 function Events() {
   return (
     <>
-
+      <section className='words'>
+        <p>We are happy to announce that the IE(I) Electrical Engineering Division has planned to conduct events in the coming days. We encourage active participation from our students. The details of the events are given below. Those interested in participating are kindly requested to register for the events. Thank you.</p>
+      </section>
       <section>
         <h2 className='fixed'>EVENTS</h2>
         <div className="card-container">

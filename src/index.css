@@ -148,9 +148,9 @@ header{
   .container .nav-link{
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: #ffffff68;
-    backdrop-filter: blur(8px);
-    border-radius: 8px;
+    background-color: #ffffff90;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
     border: 1px solid rgba(213, 210, 210, 0.77);
     position: absolute;
     width: 350px;
