@@ -36,8 +36,8 @@ function Navbar() {
                             <li><NavLink to="/">Home</NavLink></li>
                             <li><NavLink to="/curriculum">Curriculum</NavLink></li>
                             <li><NavLink to="/events">Events</NavLink></li>
-                            <li><NavLink to="/about">About</NavLink></li>
-                            <li><NavLink to="/contact">Contact</NavLink></li>
+                            <li><NavLink to="/tandp">T & P</NavLink></li>
+                            <li><NavLink to="/feedback">Feedback</NavLink></li>
                         </ul>
                         <div className="icon"  onClick={toggleMenu}>
                             <FaBars />

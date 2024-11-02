@@ -1,6 +1,5 @@
 import React from 'react'
 import './style.css'
-import images from './images.jpg'
 import poster from './images/poster.jpeg'
 import essay from './images/essay.jpeg'
 

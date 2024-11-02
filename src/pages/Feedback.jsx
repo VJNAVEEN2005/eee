@@ -1,16 +1,15 @@
 import React from 'react'
-import './style.css'
 
-function Contact() {
-  return (
-    <section>
+function Feedback() {
+    return (
+        <section>
             <div className="container">
                 <div className="content">
-                    <h2>Contact</h2>
+                    <h2>Feedback</h2>
                 </div>
             </div>
         </section>
-  )
+    )
 }
 
-export default Contact
+export default Feedback

@@ -1,11 +1,13 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import Home from './pages/Home';
-import About from './pages/About'
 import Events from './pages/Events'
 import Curriculum from './pages/Curriculum';
-import Contact from './pages/Contact'
 import { Routes, Route } from 'react-router-dom';
+import Feedback from './pages/Feedback';
+import TandP from './pages/TandP';
+
+
 
 function App() {
   return (
@@ -13,10 +15,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
+        <Route path='/feedback' element={<Feedback />} />
         <Route path='/events' element={<Events />} />
         <Route path='/curriculum' element={<Curriculum />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path='/tandp' element={<TandP />} />
       </Routes>
     </>
   )
