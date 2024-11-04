@@ -1,0 +1,61 @@
+.submit{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    flex-direction: row;
+}
+
+table, th, td {
+    border: 1px solid;
+    padding: 1px;
+}
+
+
+table thead tr th{
+    padding: 20px;
+    background-color: #212a3c;
+    border: black;
+    color: white;
+}
+
+table tbody tr td{
+    padding: 10px;
+    background-color: white;
+    color: #212a3c;
+}
+
+table {
+    padding: 1px;
+    border-collapse: collapse;
+}
+
+table tbody .btn{
+    color: #212a3c;
+    background-color: rgb(139, 197, 247);
+    padding: 10px 25px 10px 25px;
+    border-radius: 8px;
+    position: relative;
+    margin-right: 10px;
+    transition: 0.2s;
+    border: none;
+}
+
+table tbody .btn:hover{
+    background-color: rgb(110, 159, 202);
+    color: white;
+    cursor: pointer;
+}
+
+@media(max-width: 768px){
+
+    .submit{
+        top: 10%;
+    }
+
+    table{
+        scale: 60%;
+    }
+
+}

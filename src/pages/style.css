@@ -40,6 +40,7 @@
 .bt:hover{
     background-color: rgb(110, 159, 202);
     color: white;
+    cursor: pointer;
 }
 
 .card-container{
