@@ -1,0 +1,38 @@
+.flex-curriculum{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-curriculum{
+    min-width: 350px;
+    min-height: 300px;
+    border-radius: 20px;
+    border: 1px solid #c9c0c0;
+    margin: 0px 20px 20px 20px;
+    padding: 20px;
+    backdrop-filter: blur(14px);
+    background-color: rgba(255, 255, 255, 0.674);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card-curriculum .text h2{
+    color: #212a3c;
+    margin: 40px;
+    text-align: center;
+}
+
+.card-curriculum .text h3{
+    color: #212a3c;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.card-curriculum .text a{
+    color: #212a3c;
+    position: absolute;
+    left: 33%;
+    bottom: 50px;
+}
