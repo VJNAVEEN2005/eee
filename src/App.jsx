@@ -7,6 +7,7 @@ import { Routes, Route } from 'react-router-dom';
 import Feedback from './pages/Feedback';
 import TandP from './pages/TandP';
 import Submit from './pages/submit/Submit';
+import Admin from './admin/Admin';
 
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route path='/curriculum' element={<Curriculum />} />
         <Route path='/tandp' element={<TandP />} />
         <Route path='/submit' element={<Submit />} />
+        <Route path='/admin' element={<Admin />} />
       </Routes>
     </>
   )

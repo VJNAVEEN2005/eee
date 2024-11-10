@@ -1,0 +1,73 @@
+.wrapper{
+    padding: 20px;
+    width: 420px;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(14px);
+    align-items: center;
+    color: #212a3c;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;
+}
+
+.wrapper .input-box input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: solid 1px;
+    border-radius: 20px;
+    color: #212a3c;
+    padding: 20px 45px 20px 20px;
+}
+
+.wrapper .input-box input::placeholder{
+    color: #212a3c;
+}
+
+.input-box .icon-admin{
+    scale: 180%;
+    position: absolute;
+    right: 20px;
+    top: 60%;
+    transform: translateY(-50%);
+    font-size: 12px;
+}
+
+.wrapper button{
+    width: 100%;
+    height: 45px;
+    background: #212a3c;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+}
+
+.submit .feedbacktable,.eventstable table{
+    scale: 60%;
+}
+
+.submit .eventstable table tbody tr td{
+    max-width: 300px;
+    overflow: auto;
+}
+
+.admin-section{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+}
